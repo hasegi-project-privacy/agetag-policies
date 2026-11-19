@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#EEF2F7">
+<meta name="robots" content="index, follow">
+<title>Terms of Service | Age Tag</title>
+<style>
+:root {
+  --paper: #EEF2F7;      /* 눈빛 — 바탕 */
+  --chalk: #FFFFFF;      /* 표와 딱지 바탕 */
+  --shade: #DCE3EE;      /* 바탕 그늘 */
+  --line: #C3CDDD;       /* 구분선 */
+  --ink: #2E3A55;        /* 땅거미 청회 — 글자와 외곽선 */
+  --ink-soft: #55627E;   /* 보조 글자 */
+  --mustard: #F4B860;    /* 창빛 호박 — 강조 띠 */
+  --mustard-wash: #FBE7C6; /* 창빛을 옅게 — 표 머리 */
+  --teal: #4A93C2;       /* 하늘빛 — 장식 */
+  --teal-ink: #2F6E99;   /* 하늘빛 글자용 */
+  --brick-ink: #A5452A;  /* 연탄빛 글자용 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Hiragino Sans", "Yu Gothic", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 18px 64px;
+  border-top: 10px solid var(--mustard);
+  overflow-wrap: anywhere;
+}
+/* 한국어만 낱말 단위로 줄을 바꾼다. 일본어에 걸면 문장 부호에서만 끊겨 줄이 들쭉날쭉해진다. */
+html:lang(ko) body { word-break: keep-all; }
+main { max-width: 760px; margin: 0 auto; padding-top: 28px; }
+h1 {
+  display: inline-block;
+  font-size: 1.6rem; line-height: 1.35; letter-spacing: -0.01em;
+  margin: 4px 0 18px; padding-bottom: 4px;
+  border-bottom: 6px solid var(--mustard);
+}
+h2 { font-size: 1.12rem; line-height: 1.5; margin: 44px 0 12px; }
+h2::before {
+  content: ""; display: inline-block;
+  width: 0.62em; height: 0.62em; margin-right: 0.5em;
+  border: 2px solid var(--ink); border-radius: 50%;
+  background: var(--teal);
+}
+h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--brick-ink); }
+p { margin: 0 0 14px; }
+strong { font-weight: 700; }
+a { color: var(--teal-ink); text-decoration: underline; text-underline-offset: 3px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+li > ul, li > ol { margin: 8px 0 0; }
+hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+code {
+  background: var(--shade); color: var(--brick-ink);
+  padding: 1px 6px; border-radius: 5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+.tw {
+  overflow-x: auto; margin: 0 0 22px;
+  border: 2px solid var(--ink); border-radius: 10px;
+  background: var(--chalk); box-shadow: 3px 3px 0 var(--shade);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.9rem; }
+th, td {
+  padding: 9px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+th { background: var(--mustard-wash); font-weight: 700; white-space: nowrap; }
+.meta { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 4px; }
+.langbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+.langbar a, .langbar span {
+  font-size: 0.85rem; line-height: 1.4; padding: 5px 12px;
+  border: 2px solid var(--ink); border-radius: 8px;
+  background: var(--chalk); color: var(--ink); text-decoration: none;
+}
+.langbar .on { background: var(--mustard); font-weight: 700; }
+.langbar .hop { margin-left: auto; border-style: dashed; }
+.langbar a:hover, .langbar a:focus { background: var(--shade); }
+.cards { list-style: none; padding: 0; margin: 8px 0 0; }
+.cards li { margin: 0 0 14px; }
+.cards a {
+  display: block; padding: 14px 18px;
+  border: 2px solid var(--ink); border-radius: 12px;
+  background: var(--chalk); box-shadow: 4px 4px 0 var(--shade);
+  color: var(--ink); text-decoration: none;
+}
+.cards a:hover, .cards a:focus { background: var(--mustard-wash); }
+.cards .t { font-weight: 700; }
+.cards .d { color: var(--ink-soft); font-size: 0.85rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 2px dashed var(--line);
+  text-align: center; color: var(--ink-soft); font-size: 0.8rem; line-height: 2;
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 14px 56px; }
+  h1 { font-size: 1.38rem; }
+  .langbar .hop { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="langbar"><a href="../" lang="ko">한국어</a><span class="on">English</span><a href="../ja/" lang="ja">日本語</a><a class="hop" href="../../privacy/en/">Privacy Policy &rarr;</a></nav>
+<h1>Terms of Service</h1>
+<p><strong>Age Tag</strong> (<code>com.hasegi.agetag</code>)</p>
+<ul>
+<li>Effective date: November 19, 2026</li>
+<li>Last updated: November 19, 2026</li>
+</ul>
+<hr>
+<h2>Article 1 (Purpose)</h2>
+<p>These Terms govern the rights, obligations, and responsibilities between Hasegi Inc. ("the Company") and users in connection with the mobile game application "Age Tag" ("the Game") provided by the Company.</p>
+<h2>Article 2 (Definitions)</h2>
+<ol>
+<li><strong>Game</strong> — the mobile application "Age Tag" distributed by the Company through Google Play and the Apple App Store.</li>
+<li><strong>User</strong> — anyone who installs and plays the Game. The Game requires no sign-up and creates no account.</li>
+<li><strong>Game data</strong> — your Alley Boss Challenge progress (crews beaten, title, badges), records, settings, and similar information generated by your play and <strong>stored only inside your device</strong>.</li>
+<li><strong>Overtime</strong> — in a timed round, playing for 30 more seconds after the bell when your team's total age is a little behind. It is available once per round.</li>
+<li><strong>Retry</strong> — after losing a crew challenge, playing the same crew once more with both teams keeping the ages they ended with. It is available once per round.</li>
+<li><strong>In-app product</strong> — a paid product purchasable inside the Game through each store's billing system.</li>
+<li><strong>Reward ad</strong> — an ad you choose to watch to the end in exchange for Overtime or Retry.</li>
+</ol>
+<h2>Article 3 (Effect and Amendment of These Terms)</h2>
+<ol>
+<li>These Terms apply to everyone who installs and plays the Game.</li>
+<li>The Company may amend these Terms to the extent permitted by applicable law.</li>
+<li>Amendments and their effective date will be posted on this page. Material changes unfavorable to users will be announced at least 7 days in advance.</li>
+<li>Continuing to play the Game after the effective date constitutes acceptance of the amended Terms. If you do not accept them, you may stop playing and uninstall the app.</li>
+</ol>
+<h2>Article 4 (Provision of the Service)</h2>
+<ol>
+<li>The Company provides the following content through the Game:
+<ul>
+<li>A two-team alley game based on the Korean neighborhood game "Nai-meokgi" (Age Tag): two teams (you and AI kids) each guard their own utility pole. Every kid carries an age over their head; an older kid who tags a younger opponent, or anyone who touches the other team's pole, grows older. Equal ages are settled by rock-paper-scissors, teammates who hold hands add their ages together, and a team can match ages and call "Let's go at thirty!" for a group rock-paper-scissors showdown. The win condition is chosen at the start of every round: "Age race" (the first team whose every member reaches the chosen age cap wins) or "Timed" (the team with the higher total age when time runs out wins). A round lasts about three to nine minutes.</li>
+<li>"Alley Boss Challenge": a ladder across six neighborhoods, each with six named crews with different habits (36 rounds in all), opened one after another by beating the previous crew, plus free play with settings of your choice</li>
+<li>A choice of three control styles (floating joystick / drag to steer / tap to go)</li>
+</ul>
+</li>
+<li>The Game is free to download, and there is no limit on the number of rounds you can play in a day. When you lose a crew challenge, you can watch a reward ad to the end to retry with everyone's ages kept; in a timed round, when the bell rings and your team's total is a little behind, you can watch a reward ad to the end to play Overtime (each once per round). The number and conditions of Retry and Overtime and the ad conditions in Article 7 may change under Article 5.</li>
+<li>The Game <strong>can be played offline without a network connection.</strong> An internet connection is required only for displaying ads; without one, you cannot use Retry or Overtime by watching a reward ad.</li>
+<li>The Game provides no user accounts, ranking servers, cloud saves, chat, or player-versus-player features.</li>
+</ol>
+<h2>Article 5 (Modification and Suspension of the Service)</h2>
+<ol>
+<li>The Company may change content, crew composition, difficulty, the number and conditions of Retry and Overtime, and where, how often, and how many times ads are shown, as required by design and operational needs.</li>
+<li>The Company may suspend the Game in whole or in part in the following cases:
+<ul>
+<li>Where there are substantial operational reasons</li>
+<li>Where applicable law or store policy changes</li>
+<li>Force majeure, including outages at the store or advertising providers</li>
+</ul>
+</li>
+<li>If the service is permanently discontinued, the Company will announce the planned end date in advance through the store listing or this page.</li>
+</ol>
+<h2>Article 6 (Disclaimer Regarding Game Data)</h2>
+<ol>
+<li>Game data is <strong>stored only inside your device</strong> and is not backed up to any server of the Company.</li>
+<li>The Company bears no obligation to restore game data lost through:
+<ul>
+<li>Uninstalling the app, or clearing app data or cache in system settings</li>
+<li>Loss, failure, factory reset, or replacement of the device</li>
+<li>OS reinstallation, insufficient storage, or unsupported device-transfer tools</li>
+</ul>
+</li>
+<li>Users play the Game with the understanding that game data is device-bound.</li>
+<li>In-game ages, records, and titles exist for enjoyment of play; the Company does not warrant their numerical accuracy or any particular outcome.</li>
+</ol>
+<h2>Article 7 (Advertising)</h2>
+<ol>
+<li>The Game is provided free of charge and is funded by advertising revenue.</li>
+<li>Five kinds of ads appear in the Game. The intervals and counts below are as of the effective date and may change under Article 5.
+<ul>
+<li><strong>Interstitial ads</strong> — shown only when you close the result of a round and move on (between rounds). They are never shown in the middle of a round. They are not shown while you have finished 3 rounds or fewer in total, and they appear at most once every 3 rounds, at most once every 5 minutes, and up to 3 times per session of continuous use.</li>
+<li><strong>App open ads</strong> — shown only when you launch the app and when you return after being away for more than 2 hours. They appear at most once every 2 hours, and are not shown while you have finished 3 rounds or fewer in total.</li>
+<li><strong>Reward ads</strong> — shown in only two places, and only when you actively choose them: (1) when you lose a crew challenge and the result sheet offers it, and you choose "Watch an ad to retry with your ages" (once per round); (2) in a timed round, when the Overtime offer appears after the bell and you choose "Watch an ad for 30 s more" (once per round). Watching one to the end gives you Retry or Overtime. Neither is offered before you have finished three rounds.</li>
+<li><strong>Banner ads</strong> — shown only at the bottom of the alley map screen. They are never shown on the screen where a round is played.</li>
+<li><strong>Native ads</strong> — shown only inside the exit confirmation dialog that appears when you are about to close the app (the Back button on Android).</li>
+</ul>
+</li>
+<li>Ad content is supplied by the advertising provider, and any transaction concerning goods or services in an ad is between you and the advertiser. The Company is not responsible for the content of ads, but does configure ad content to be restricted to the "G" (General audiences) rating.</li>
+</ol>
+<h2>Article 8 (In-App Products and Refunds)</h2>
+<ol>
+<li>The Game currently sells no paid in-app products, and no payment takes place inside the Game.</li>
+<li>If in-app products are added in the future, the Company will amend these Terms under Article 3 to describe the products and their conditions.</li>
+<li>In that case, payment will be processed through Google Play Billing or the Apple App Store, and <strong>refunds will follow each store's refund policy and procedure.</strong> The Company has no authority to cancel or refund a payment on the store's behalf.</li>
+</ol>
+<h2>Article 9 (User Obligations)</h2>
+<p>Users must not:</p>
+<ol>
+<li>Reverse-engineer, decompile, or modify the Game, or manipulate game data, ad display conditions, Retry, or Overtime through memory editing, automation tools, or other abnormal means;</li>
+<li>Interfere with the normal operation of the Game or of the advertising system, or obtain an unfair benefit;</li>
+<li>Infringe the intellectual property rights of the Company or the rights of third parties;</li>
+<li>Violate applicable law.</li>
+</ol>
+<p>The Company is not responsible for game data that is corrupted or fails to operate as a result of such acts, and may take action as permitted by law.</p>
+<h2>Article 10 (Intellectual Property)</h2>
+<ol>
+<li>Copyright and all other intellectual property rights in the characters, graphics, music, sound effects, text, and code contained in the Game belong to the Company or its licensors.</li>
+<li>Users are granted only the right to play the Game for personal, non-commercial purposes, and may not reproduce, distribute, transmit, adapt, or sell its content without the Company's prior written consent.</li>
+<li>Personal recording, streaming, and uploading of gameplay footage is permitted for non-commercial purposes.</li>
+<li>Full license texts for the open-source software and fonts (Pretendard JP and Jua — SIL Open Font License 1.1) used in the Game are available at [Settings] → [About] → [Open-source licenses].</li>
+</ol>
+<h2>Article 11 (Governing Law and Disputes)</h2>
+<ol>
+<li>These Terms are governed by and construed in accordance with the laws of the Republic of Korea.</li>
+<li>In the event of a dispute, both parties shall endeavor in good faith to reach an amicable resolution.</li>
+<li>Any dispute not resolved by agreement shall be submitted to the court having jurisdiction under the Civil Procedure Act of the Republic of Korea.</li>
+</ol>
+<h2>Article 12 (Contact)</h2>
+<p>For questions about the Game, please use [Settings] → [About] → [Contact us] in the app, or the email address below.</p>
+<ul>
+<li>Email — hasegi.cs@gmail.com</li>
+<li>Operator — Hasegi Inc. · Development</li>
+</ul>
+<footer>
+&copy; 2026 Hasegi Inc.<br>
+Development &middot; Contact <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>
